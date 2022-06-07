@@ -1,7 +1,6 @@
 import pyautogui
 import time
 
-
 # 実行時間計測
 start = time.time()
 
@@ -22,7 +21,8 @@ else:
     mod = None
     i = 0
     while mod == None and i < 10000:
-        mod = pyautogui.locateOnScreen("./img/CoE_all_fire_skill.png", region=(250,400,417,290), grayscale=True)
+        mod = pyautogui.locateOnScreen("./img/CoE_all_fire_skill_2.png", region=(250,538,402,100), minSearchTime=1)
+        # mod = pyautogui.locateOnScreen("./img/CoE_to_energy_shield.png", region=(250,538,402,100), minSearchTime=1)
         print(mod)
 
         if mod != None:
